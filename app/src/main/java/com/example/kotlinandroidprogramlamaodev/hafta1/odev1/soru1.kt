@@ -1,20 +1,24 @@
-package com.example.kotlinandroidprogramlamaodev.hafta1.odev1
+import java.util.Scanner
+
 fun main() {
-    // Önceden belirlenen kullanıcı adı ve şifre
-    val correctUsername = "adile"
-    val correctPassword = "A2345"
+    // Önceden belirlenmiş kullanıcı adı ve şifre
+    val predefinedUsername = "adile"
+    val predefinedPassword = "Sifrebenim"
 
-    // Kullanıcıdan kullanıcı adı ve şifre girişi
-    println("Kullanıcı Adı: ")
-    val inputUsername = readLine()?.toLowerCase()
+    // Kullanıcıdan girişleri almak için Scanner nesnesi oluşturuluyor
+    println("Kullanıcı adınızı giriniz:")
+    val scanner = Scanner(System.`in`)
+    val enteredUsername = scanner.next()
 
-    println("Şifre: ")
-    val inputPassword = readLine()
+    println("Şifrenizi giriniz:")
+    val enteredPassword = scanner.next()
 
-    // Eşleştirme
-    if (inputUsername == correctUsername && inputPassword == correctPassword) {
-        println("Hoş geldiniz!")
+    // Kullanıcı adını ignoreCase=true ile karşılaştırıyoruz, böylece harf büyüklüğüne dikkat etmiyoruz
+    // Ancak şifre için harf büyüklüğüne dikkat ediyoruz, bu nedenle ignoreCase=false kullanıyoruz
+    if (enteredUsername.equals(predefinedUsername, ignoreCase = true) && enteredPassword == predefinedPassword) {
+        println("Hoş geldiniz, $enteredUsername!")
     } else {
         println("Kullanıcı adı veya şifre hatalı!")
     }
 }
+
