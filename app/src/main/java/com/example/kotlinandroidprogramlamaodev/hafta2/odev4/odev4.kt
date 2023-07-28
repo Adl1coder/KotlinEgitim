@@ -54,4 +54,5 @@ fun main(args: Array<String>) {
     // simpleArraySum fonksiyonunu çağırıyoruz ve sonucu ekrana yazdırıyoruz
     val result = simpleArraySum(ar)
     println("Sayıların toplamı: $result")
+    //
 }
