@@ -1,5 +1,3 @@
-package com.example.kotlinandroidprogramlamaodev.hafta2.odev4
-//hackerrank sorusu
 import java.io.*
 import java.math.*
 import java.security.*
@@ -22,26 +20,38 @@ import kotlin.text.*
 /*
  * Complete the 'simpleArraySum' function below.
  *
- * The function is expected to return an INTEGER.
- * The function accepts INTEGER_ARRAY ar as parameter.
+ * Fonksiyonun amacı, parametre olarak aldığı tamsayı dizisinin elemanlarının toplamını DÖNMEKTİR.
  */
 
 fun simpleArraySum(ar: Array<Int>): Int {
-    // Write your code here
-    var sum = 0 // Toplamı tutmak için bir değişken oluşturuyoruz ve başlangıç değerini 0 yapıyoruz.
-    for (element in ar) {
-        sum += element // Her elemanı toplam değişkenine ekliyoruz.
+    // Elemanların toplamını saklamak için bir değişkeni başlangıç değeriyle oluşturuyoruz
+    var totalSum = 0
+
+    // Dizi içindeki her bir elemanı döngü ile toplam değişkenine ekliyoruz
+    for (num in ar) {
+        totalSum += num
     }
-    return sum // Toplamı döndürüyoruz.
+
+    // Toplamı tamsayı olarak geri döndürüyoruz
+    return totalSum
 }
 
 fun main(args: Array<String>) {
-    val arCount = readLine()!!.trim().toInt() // Kullanıcıdan dizinin boyutunu alıyoruz.
+    // Kullanıcıdan alınacak sayı adedini belirterek istem yapalım
+    print("Kaç adet sayı gireceksiniz? ")
+    val arCount = readLine()!!.trim().toInt()
 
-    val ar = readLine()!!.trimEnd().split(" ").map { it.toInt() }.toTypedArray() // Kullanıcıdan dizinin elemanlarını alıyoruz.
+    // Kullanıcıdan sayıları alıp diziye dönüştürelim
+    print("Sayıları boşluklarla ayrılmış olarak girin: ")
+    val ar = readLine()!!.trimEnd().split(" ").map { it.toInt() }.toTypedArray()
 
-    val result = simpleArraySum(ar) // simpleArraySum fonksiyonunu çağırarak toplamı hesaplatıyoruz.
+    // Kullanıcının girdiği sayıları ekrana yazdıralım
+    println("Girilen sayılar:")
+    for (num in ar) {
+        println(num)
+    }
 
-    println(result) // Sonucu ekrana yazdırıyoruz.
+    // simpleArraySum fonksiyonunu çağırıyoruz ve sonucu ekrana yazdırıyoruz
+    val result = simpleArraySum(ar)
+    println("Sayıların toplamı: $result")
 }
-
