@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinAndroidProgramlamaOdev"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/HavaDurumu" />
+
+        <activity
+            android:name=".odev6.HavaDurumu"
+            android:exported="false"
+            android:label="@string/title_activity_hava_durumu"
+            android:theme="@style/Theme.KotlinAndroidProgramlamaOdev" />
+        <activity
+            android:name=".hafta3.odev1.product_activity"
+            android:exported="false" />
+        <activity
+            android:name=".hafta3.odev1.ProductActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

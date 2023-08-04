@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:textDirection="firstStrong">
+
+    <!-- Ürün Listesi ScrollView ile sarmalama -->
+    <ScrollView
+        android:layout_width="391dp"
+        android:layout_height="724dp"
+        android:layout_margin="16dp"
+        android:background="#351035"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!-- Ürün Listesi dikey bir LinearLayout içinde düzenleniyor -->
+        <LinearLayout
+
+            android:id="@+id/productListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Ürün 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/productImage1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/images" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/productName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="LENOVO"
+                        android:textColor="#FFFAFA"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/productDescription1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="7 YIL GARANTİ"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                        android:textColor="#FFFAFA"
+
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/productPrice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E92D1035"
+                        android:drawableTint="#FFFFFF"
+                        android:foregroundTint="#FFFFFF"
+                        android:text="28.000"
+                        android:textColor="#EFE7E7"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buyButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Şimdi Satın Al"
+                    android:textColorHighlight="#FDD835"
+                    android:textColorLink="#404040" />
+
+            </LinearLayout>
+
+            <!-- Ürün 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Ürün 2'deki bileşenler buraya eklenecek -->
+
+            </LinearLayout>
+            <!-- Ürün 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/productImage2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/resim2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/productName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="BOSCH"
+                        android:textColor="#FFFAFA"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/productDescription2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="GERİ DÖNÜŞÜME KATKI SAĞLA"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                        android:textColor="#FFFAFA"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/productPrice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E92D1035"
+                        android:drawableTint="#FFFFFF"
+                        android:foregroundTint="#FFFFFF"
+                        android:text="30.000"
+                        android:textColor="#EFE7E7"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buyButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Şimdi Satın Al"
+                    android:textColorHighlight="#FDD835"
+                    android:textColorLink="#404040" />
+
+            </LinearLayout>
+            <!-- Ürün 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/productImage3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/resim3" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/productName3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="HyperX Cloud Core"
+                        android:textColor="#FFFAFA"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/productDescription3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="OYUNCU KULAKLIĞI"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                        android:textColor="#FFFAFA"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/productPrice3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E92D1035"
+                        android:drawableTint="#FFFFFF"
+                        android:foregroundTint="#FFFFFF"
+                        android:text="1.500"
+                        android:textColor="#EFE7E7"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buyButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Şimdi Satın Al"
+                    android:textColorHighlight="#FDD835"
+                    android:textColorLink="#404040" />
+
+            </LinearLayout>
+            <!-- Ürün 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/productImage4"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/resim4" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/productName4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="PHILIPS"
+                        android:textColor="#FFFAFA"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/productDescription4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="+NETFLIX"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                        android:textColor="#FFFAFA"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/productPrice4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E92D1035"
+                        android:drawableTint="#FFFFFF"
+                        android:foregroundTint="#FFFFFF"
+                        android:text="65.000"
+                        android:textColor="#EFE7E7"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buyButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Şimdi Satın Al"
+                    android:textColorHighlight="#FDD835"
+                    android:textColorLink="#404040" />
+
+            </LinearLayout>
+            <!-- Ürün 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/resim5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="ZEBRA KONSOL"
+                        android:textColor="#FFFAFA"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/productDescription5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="24 AY TAKSİT"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                        android:textColor="#FFFAFA"
+                        android:textSize="14sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E92D1035"
+                        android:drawableTint="#FFFFFF"
+                        android:foregroundTint="#FFFFFF"
+                        android:text="3.000"
+                        android:textColor="#EFE7E7"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Şimdi Satın Al"
+                    android:textColorHighlight="#FDD835"
+                    android:textColorLink="#404040" />
+
+            </LinearLayout>
+            <!-- Ürün 6 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/resim6" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="DANIEL KLEIN"
+                        android:textColor="#FFFAFA"
+                        android:textSize="18sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="ASLA SU GEÇİRMEZ"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                        android:textColor="#FFFAFA"
+                        android:textSize="14sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E92D1035"
+                        android:drawableTint="#FFFFFF"
+                        android:foregroundTint="#FFFFFF"
+                        android:text="2.700"
+                        android:textColor="#EFE7E7"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buyButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Şimdi Satın Al"
+                    android:textColorHighlight="#FDD835"
+                    android:textColorLink="#404040" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

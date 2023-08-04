@@ -1,21 +1,4 @@
-import java.io.*
-import java.math.*
-import java.security.*
-import java.text.*
 import java.util.*
-import java.util.concurrent.*
-import java.util.function.*
-import java.util.regex.*
-import java.util.stream.*
-import kotlin.collections.*
-import kotlin.comparisons.*
-import kotlin.io.*
-import kotlin.jvm.*
-import kotlin.jvm.functions.*
-import kotlin.jvm.internal.*
-import kotlin.ranges.*
-import kotlin.sequences.*
-import kotlin.text.*
 
 /*
  * Complete the 'simpleArraySum' function below.
@@ -37,13 +20,19 @@ fun simpleArraySum(ar: Array<Int>): Int {
 }
 
 fun main(args: Array<String>) {
+    // Scanner kullanarak girdi alma işlemi için Scanner nesnesi oluşturuyoruz
+  val scanner= Scanner(System.`in`)
+
     // Kullanıcıdan alınacak sayı adedini belirterek istem yapalım
-    print("Kaç adet sayı gireceksiniz? ")
-    val arCount = readLine()!!.trim().toInt()
+  print("kaç sayı gireceksiniz")
+    val arCount=scanner.nextInt()
 
     // Kullanıcıdan sayıları alıp diziye dönüştürelim
     print("Sayıları boşluklarla ayrılmış olarak girin: ")
-    val ar = readLine()!!.trimEnd().split(" ").map { it.toInt() }.toTypedArray()
+
+   val ar= Array(arCount){
+       scanner.nextInt()
+   }
 
     // Kullanıcının girdiği sayıları ekrana yazdıralım
     println("Girilen sayılar:")
@@ -54,5 +43,7 @@ fun main(args: Array<String>) {
     // simpleArraySum fonksiyonunu çağırıyoruz ve sonucu ekrana yazdırıyoruz
     val result = simpleArraySum(ar)
     println("Sayıların toplamı: $result")
-    //
+
+    // Scanner nesnesini kapatmayı unutmayalım
+    scanner.close()
 }
