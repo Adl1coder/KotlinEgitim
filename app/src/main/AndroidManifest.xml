@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinAndroidProgramlamaOdev"
         tools:targetApi="31">
+
+
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/HavaDurumu" />
