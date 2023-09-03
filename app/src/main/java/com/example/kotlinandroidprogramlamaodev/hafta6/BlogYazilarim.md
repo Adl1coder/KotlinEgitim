@@ -1,0 +1,1 @@
+https://adilegunngorr.blogspot.com/
