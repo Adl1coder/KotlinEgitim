@@ -2,7 +2,7 @@
 
 
 [TR]" Hoşgeldiniz! SistersLab - Bilim ve Teknolojide Kadın Derneği tarafından düzenlenen 
-Kotlin Training | Android Programming with Kotlin Academy sürecinde yaptığım ödevleri, Medium yazılarımı ve sertifikaları paylaştığım depo (repository) budur."
+Kotlin Training | Android Programming with Kotlin Academy sürecinde yaptığım ödevleri, Medium yazılarımı ve sertifikaları paylaştığım depo (repository) budur. Ayrıca Medium hesabımın linki aşağıda  eklidir. Teşekkürler!"
 
 
 [EN]" Welcome! This is the repository where I share the assignments, Medium posts and certificates I did during Kotlin Training | Android Programming with Kotlin Academy 
